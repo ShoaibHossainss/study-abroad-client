@@ -2,7 +2,7 @@
 
 const WhyStudy = () => {
     return (
-        <div>
+        <div id="why-study">
          <section className="py-12 px-6">
   <h2 className="text-3xl font-semibold text-center mb-6">
     Why Study MBBS Abroad?

@@ -2,7 +2,7 @@
 
 const AdmissionProcess = () => {
     return (
-        <div>
+        <div id="admission-process">
       <section className="py-12 px-6 ">
   <h2 className="text-3xl font-semibold text-center mb-6">
     Admission Process & Eligibility: Steps for Applying

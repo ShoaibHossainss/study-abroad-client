@@ -9,7 +9,7 @@ const LeadForm = () => {
   };
 
   return (
-    <div>
+    <div id="form">
         <h3 className="text-3xl font-semibold text-center mb-6">Get in Touch</h3>
 
          <form onSubmit={handleSubmit(onSubmit)} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">

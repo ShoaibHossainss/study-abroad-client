@@ -1,3 +1,6 @@
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { GrInstagram, GrLinkedin } from "react-icons/gr";
 
 
 const Footer = () => {
@@ -39,16 +42,16 @@ const Footer = () => {
       <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
       <div className="flex space-x-4">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook-f text-2xl hover:text-teal-500"></i>
+          <FaFacebook className="fab fa-facebook-f text-2xl hover:text-teal-500"/>
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter text-2xl hover:text-teal-500"></i>
+          <FaSquareXTwitter className="fab fa-twitter text-2xl hover:text-teal-500"/>
         </a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-instagram text-2xl hover:text-teal-500"></i>
+        <GrInstagram className="fab fa-twitter text-2xl hover:text-teal-500"/>
         </a>
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin-in text-2xl hover:text-teal-500"></i>
+        <GrLinkedin className="fab fa-twitter text-2xl hover:text-teal-500"/>
         </a>
       </div>
     </div>

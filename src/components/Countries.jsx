@@ -9,7 +9,7 @@ import egypt from '../assets/egypt-flag-png-large.png';
 const Countries = () => {
     return (
         
-      <div>
+      <div id='top-countries'>
         <h2 className='text-3xl font-semibold text-center mb-6'>Best Countries To Pursue Your MBBS Degree</h2>
           <div className='grid grid-cols-3 gap-6 mt-6 ml-5'>
           <div className="card bg-base-100  w-96 shadow-xl ">
