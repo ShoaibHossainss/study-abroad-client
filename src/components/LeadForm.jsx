@@ -1,19 +1,18 @@
-import React from "react";
+
 import { useForm } from "react-hook-form";
 
 const LeadForm = () => {
-  // Set up React Hook Form
-  const { register, handleSubmit, formState: { errors }, setError } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  // Handle form submission
   const onSubmit = (data) => {
-    console.log(data); // You can replace this with the actual form submission logic (e.g., sending data to an API).
+    console.log(data); 
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
-      <h3 className="text-2xl font-semibold text-center mb-6">Contact Us</h3>
+    <div>
+        <h3 className="text-3xl font-semibold text-center mb-6">Get in Touch</h3>
 
+         <form onSubmit={handleSubmit(onSubmit)} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
       {/* Name Input */}
       <div className="mb-4">
         <label htmlFor="name" className="block text-lg font-medium">Name</label>
@@ -61,7 +60,7 @@ const LeadForm = () => {
         {errors.phone && <span className="text-red-500 text-sm">{errors.phone.message}</span>}
       </div>
 
-      {/* Country Preference Select */}
+      {/* Country Preference Input*/}
       <div className="mb-6">
         <label htmlFor="country" className="block text-lg font-medium">Country Preference</label>
         <select
@@ -90,6 +89,9 @@ const LeadForm = () => {
         </button>
       </div>
     </form>
+    </div>
+
+   
   );
 };
 
